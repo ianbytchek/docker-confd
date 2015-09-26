@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 
-echo -n 'Moving confd into ´/usr/local/bin´… '
+echo -n 'Moving confd binary into $PATH… '
 mv '/docker/confd' '/usr/local/bin'
 echo ' OK!'
 
