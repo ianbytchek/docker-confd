@@ -1,0 +1,13 @@
+machine:
+  services:
+    - docker
+
+dependencies:
+  override:
+    - ./build/ci/script/build.sh
+
+deployment:
+  hub:
+    branch: master
+    commands:
+      - ./build/ci/script/deploy.sh
