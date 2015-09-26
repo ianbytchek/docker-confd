@@ -1,0 +1,15 @@
+[template]
+
+# The name of the template that will be used to render the application's configuration file
+# confd will look in `/etc/conf.d/templates` for these files by default
+
+src = "foo.tmpl"
+
+# The location to place the rendered configuration file
+
+dest = "/etc/confd/output/foo.conf"
+
+# The etcd keys or directory to watch. This is where the information to fill in
+# the template will come from.
+
+keys = [ "/services" ]

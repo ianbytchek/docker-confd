@@ -6,6 +6,10 @@ dependencies:
   override:
     - ./build/ci/script/build.sh
 
+test:
+  override:
+    - ./build/ci/script/test.sh
+
 deployment:
   hub:
     branch: master
