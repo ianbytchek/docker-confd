@@ -1,9 +1,6 @@
 #!/usr/bin/env bash
 
-# Setup error trapping.
-
-set -e
-trap 'echo "Error occured on line $LINENO." && exit 1' ERR
+set -euo pipefail
 
 # Download the latest confd executable and build the docker image.
 

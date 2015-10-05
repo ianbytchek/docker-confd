@@ -1,9 +1,6 @@
 #!/usr/bin/env bash
 
-# Setup error trapping.
-
-set -e
-trap 'echo "Error occured on line $LINENO." && exit 1' ERR
+set -euo pipefail
 
 # Bring up etcd service container and wait a little until etcd gets initialised.
 
