@@ -3,6 +3,8 @@ machine:
     - docker
 
 dependencies:
+  pre:
+    - ./build/ci/script/dependencies.sh
   override:
     - ./build/ci/script/build.sh
 

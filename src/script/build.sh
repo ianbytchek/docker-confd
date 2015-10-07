@@ -7,7 +7,7 @@ mv '/docker/confd' '/usr/bin'
 echo ' OK!'
 
 echo -n 'Moving docker binary into $PATH… '
-mv '/docker/confd' '/usr/bin'
+mv '/docker/docker' '/usr/bin'
 echo ' OK!'
 
 echo -n 'Cleaning up container…'
